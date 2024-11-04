@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #ffe4e6;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.converter input, .converter select, .converter button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.converter input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+.currency-selectors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-selectors select {
+    width: 45%; 
+}
+
+#swapButton {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #ff80ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#swapButton:hover {
+    background-color: #f06292; 
+}
+
+button {
+    width: 100%;
+    background-color: #ff80ab; 
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f06292; 
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
