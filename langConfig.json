@@ -1,0 +1,53 @@
+{
+    "en": {
+        "title": "Currency Converter",
+        "amountPlaceholder": "Amount",
+        "convertButton": "Convert",
+        "swapButton": "⇆",
+        "errorMessages": {
+            "offline": "You are offline. Using cached data if available.",
+            "invalidAmount": "Please enter a valid amount",
+            "noData": "No exchange rates data available. Please connect to the internet.",
+            "hide": ""
+        },
+        "status": {
+            "online": "You are online",
+            "offline": "You are offline"
+        },
+        "lastUpdated": "Last updated"
+    },
+    "ro": {
+        "title": "Convertor Valutar",
+        "amountPlaceholder": "Sumă",
+        "convertButton": "Convertește",
+        "swapButton": "⇆",
+        "errorMessages": {
+            "offline": "Ești offline. Folosim datele stocate în cache, dacă sunt disponibile.",
+            "invalidAmount": "Vă rugăm să introduceți o sumă validă",
+            "noData": "Nu există date despre ratele de schimb. Vă rugăm să vă conectați la internet.",
+            "hide": ""
+        },
+        "status": {
+            "online": "Ești online",
+            "offline": "Ești offline"
+        },
+        "lastUpdated": "Ultima actualizare"
+    },
+    "de": {
+        "title": "Währungsrechner",
+        "amountPlaceholder": "Betrag",
+        "convertButton": "Konvertieren",
+        "swapButton": "⇆",
+        "errorMessages": {
+            "offline": "Du bist offline. Verwenden zwischengespeicherte Daten, falls verfügbar.",
+            "invalidAmount": "Bitte geben Sie einen gültigen Betrag ein",
+            "noData": "Keine Wechselkursdaten verfügbar. Bitte verbinden Sie sich mit dem Internet.",
+            "hide": ""
+        },
+        "status": {
+            "online": "Du bist online",
+            "offline": "Du bist offline"
+        },
+        "lastUpdated": "Zuletzt aktualisiert"
+    }
+}

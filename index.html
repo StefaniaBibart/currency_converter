@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
+    <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Currency Converter</h1>
+        <h1 id="title"></h1>
+        <p id="status-message"></p>
         <div class="converter">
-            <input type="number" id="amount" placeholder="Amount" min="0" step="0.01" required/>
+            <input type="number" id="amount" min="0" oninput="validateAmountInput(this); hideOnlineMessage()" required/>
             <div class="currency-selectors">
                 <select id="fromCurrency"></select>
                 <button id="swapButton" onclick="swapCurrencies()">⇆</button>
                 <select id="toCurrency"></select>
             </div>
-            <button onclick="convertCurrency()">Convert</button>
+            <button id="convertButton" onclick="convertCurrency()"></button>
             <p id="result"></p>
+            <p id="last-updated"></p> 
         </div>
+        <p id="error-message"></p>
     </div>
     <script src="script.js"></script>
 </body>

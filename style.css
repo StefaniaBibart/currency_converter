@@ -1,3 +1,14 @@
+:root {
+    --background-color: #ffe4e6;
+    --container-bg-color: #ffffff;
+    --text-color: #333333;
+    --button-color: #ff80ab;
+    --button-hover-color: #f06292;
+    --error-color: red;
+    --status-online-color: green;
+    --status-offline-color: red;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,16 +16,17 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background: #ffe4e6;
+    background: var(--background-color);
 }
 
 .container {
-    background: #ffffff;
+    background: var(--container-bg-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 300px;
+    color: var(--text-color);
 }
 
 h1 {
@@ -38,16 +50,25 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .currency-selectors select {
     width: 45%; 
 }
 
+.currency-selectors option {
+    font-size: 14px;
+    padding: 5px;
+    background: #fff;
+    color: var(--text-color);
+}
+
 #swapButton {
     margin: 0 5px;
     padding: 10px;
-    background-color: #ff80ab;
+    background-color: var(--button-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -55,22 +76,75 @@ h1 {
 }
 
 #swapButton:hover {
-    background-color: #f06292; 
+    background-color: var(--button-hover-color); 
 }
 
 button {
     width: 100%;
-    background-color: #ff80ab; 
+    background-color: var(--button-color); 
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #f06292; 
+    background-color: var(--button-hover-color); 
 }
 
 #result {
     margin-top: 10px;
     font-weight: bold;
     font-size: larger;
+}
+
+#error-message {
+    color: var(--error-color);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#status-message {
+    color: var(--status-online-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+#status-message.offline {
+    color: var(--status-offline-color);
+}
+
+#last-updated {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .converter input, .converter select, .converter button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #swapButton {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .currency-selectors {
+        flex-direction: column; 
+    }
+
+    .currency-selectors select {
+        width: 100%; 
+    }
 }
